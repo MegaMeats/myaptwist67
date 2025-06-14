@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="language" content="en-us">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex,nofollow">
+	<title>Documentation</title>
+	
+	<link rel="icon" href="assets/favicon.png">
+
+	<script src="assets/jquery-3.4.1.min.js"></script>
+
+	<link rel="stylesheet" href="assets/semantic-ui/semantic.min.2.4.2.css">
+
+	<script src="assets/semantic-ui/semantic.min.2.4.2.js"></script>
+
+	<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+	
+	<div class="ui container">
+		<div class="ui grid">
+			<div class="left column">
+				<div class="ui header">
+					Documentation
+					<div class="sub header">vAlexa</div>
+				</div>
+
+				<div class="ui vertical fluid large menu">
+				  <div class="item">
+				    <div class="header">Installation</div>
+				    <div class="menu">
+				    	<a class="item" href="#inst-requirements">Requirements</a>
+				      <a class="item" href="#inst-general">General</a>
+				      <a class="item" href="#inst-database">Database</a>
+				      <a class="item" href="#inst-admin-access">Admin access</a>
+				      <a class="item" href="#inst-payments-processors">Payments processors</a>
+				      <a class="item" href="#inst-mailer">Mailer</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Settings</div>
+				    <div class="menu">
+				      <a class="item" href="#sets-general">General</a>
+				      <a class="item" href="#sets-mail">Mail</a>
+				      <a class="item" href="#sets-payments">Payments</a>
+				      <a class="item" href="#sets-files-hosts">Files Hosts</a>
+				      <a class="item" href="#sets-social-login">Social Login</a>
+				      <a class="item" href="#sets-search-engines">Search Engines</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Categories</div>
+				    <div class="menu">
+				      <a class="item" href="#categories">Categories</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Products</div>
+				    <div class="menu">
+				      <a class="item" href="#products">Products</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Pages</div>
+				    <div class="menu">
+				      <a class="item" href="#pages">Pages</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Posts</div>
+				    <div class="menu">
+				      <a class="item" href="#posts">Posts</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Coupons</div>
+				    <div class="menu">
+				      <a class="item" href="#Coupons">Coupons</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Transactions</div>
+				    <div class="menu">
+				      <a class="item" href="#Transactions">Transactions</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Comments</div>
+				    <div class="menu">
+				      <a class="item" href="#Comments">Comments</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Users</div>
+				    <div class="menu">
+				      <a class="item" href="#Users">Users</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Reviews</div>
+				    <div class="menu">
+				      <a class="item" href="#Reviews">Reviews</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Newsletter</div>
+				    <div class="menu">
+				    	<a class="item" href="#Subscribers">Subscribers</a>
+				      <a class="item" href="#Create-newsletter">Create newsletter</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">FAQs</div>
+				    <div class="menu">
+				      <a class="item" href="#FAQs">FAQs</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Support Messages</div>
+				    <div class="menu">
+				      <a class="item" href="#Support-Messages">Support Messages</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Profile</div>
+				    <div class="menu">
+				      <a class="item" href="#Profile">Profile</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Sitemap</div>
+				    <div class="menu">
+				      <a class="item" href="#Sitemap">Sitemap</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Languages</div>
+				    <div class="menu">
+				      <a class="item" href="#Languages">Add a language</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Assets</div>
+				    <div class="menu">
+				      <a class="item" href="#Assets">Assets</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    <div class="header">Upgrades</div>
+				    <div class="menu">
+				      <a class="item" href="#upgrade">v2.0.1</a>
+				    </div>
+				  </div>
+				</div>
+			</div>
+
+			<div class="right column">
+				<div class="content">
+					<div class="ui segment">
+						<h2>Installation</h2>
+						<div class="step">
+							<h3 id="inst-requirements">1. Requirements</h3>
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									PHP version 7.3 or greater
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									PHP Curl extension
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									PHP FileInfo extension
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									PHP JSON extension
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									PHP Intl extension
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									PHP MbString extension
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									PHP OpenSSL extension
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									PHP Pdo_mysql extension
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Mysql version 5.6 or greater
+								</li>
+							</ul>
+
+							<h3 id="inst-general">2. Installation</h3>
+							<p>The .zip file contains two folders, one named "Doc" contains the documentation and one name "Script" contains the main script of the application.</p>
+							<p>- The documentation serves as a reference to configure your website and know how things work.</p>
+							<p>- The main Script folder is the application.</p>
+
+							<div class="ui divider"></div>
+
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									Extract the zip file.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Move the content of "Script" folder to your domain name folder.
+								</li>
+
+								<div class="ui fluid rounded image">
+									<img src="images/cpanel-1.png" alt="cpanel-1.png">
+								</div>
+
+								<div class="ui hidden divider"></div>
+
+								<small>Note: The .htaccess file you see in the list of files contains the necessary directives to redirects all requests to /public folder.</small>
+								<br><br>
+								<small>A better solution to redirect requests to public folder is to change the "Document root" from your cPanel >> Domains or Subdomains.</small>
+								<br><br>
+								<small>With a Primary domain (the main domain name in your server), it may not be possible to change to Document root, so, the .htaccess file above will take care of the redirection.</small>
+
+								<div class="ui hidden divider"></div>
+
+								<div class="ui fluid rounded image">
+									<img src="images/cpanel-domains-1.png" alt="cpanel-domains-1.png">
+								</div>
+
+								<div class="ui hidden divider"></div>
+
+								<div class="ui fluid rounded image">
+									<img src="images/cpanel-domains-2.png" alt="cpanel-domains-2.png">
+								</div>
+
+								<div class="ui hidden divider"></div>
+
+								<div class="ui fluid rounded image">
+									<img src="images/cpanel-domains-3.png" alt="cpanel-domains-3.png">
+								</div>
+
+								<div class="ui hidden divider"></div>
+
+								<li>
+									<i class="circle small outline icon"></i>
+									To start the installation, access your website via the address bar, https://example.com , you will be redirected automatically to the installation form.
+								</li>
+
+								<small>Note: Some fields of the installation form will be stored in .env file (Database info, website url) while the rest will be stored in your database.</small>
+
+								<div class="ui hidden divider"></div>
+
+								<li>
+									<i class="circle small outline icon"></i>
+									Once the installation is completed, you will be redirected to the website administration, there, you can start configuring your website (Mailer, Payment gateways, Files hosts, ...).
+								</li>
+							</ul>
+							
+							
+
+							<h3 id="inst-general">3. General</h3>
+							<p>General settings, site name, title, description, logo, favicon...</p>
+
+							<div class="ui fluid image">
+								<img src="images/inst-1.png">
+							</div>
+
+							<h3 id="inst-database">4. Database</h3>
+							<p>Here, you should already have a database created in your server, in order to do that (if it's not already done), in yout server cPanel, click on "MySQL® Databases" 
+
+							<div class="ui fluid image">
+								<img src="images/inst-6.png">
+							</div>
+
+							<div class="ui hidden divider"></div>
+
+							then create a new database
+
+							<div class="ui hidden divider"></div>
+
+							<div class="ui fluid image">
+								<img src="images/inst-7.png">
+							</div>
+
+							<div class="ui hidden divider"></div>
+
+							then create a new user for your database 
+
+							<div class="ui hidden divider"></div>
+
+							<div class="ui fluid image">
+								<img src="images/inst-8.png">
+							</div>
+
+							<div class="ui hidden divider"></div>
+
+							and finally add the user you've just created to your database 
+
+							<div class="ui hidden divider"></div>
+
+							<div class="ui fluid image">
+								<img src="images/inst-9.png">
+							</div>
+
+							<div class="ui hidden divider"></div>
+
+							<p>Note: the user's username & password and the database's name are what you need to configure your database</p>
+						
+							<div class="ui hidden divider"></div>
+
+							<div class="ui fluid image">
+								<img src="images/inst-2.png">
+							</div>
+
+							<div class="ui hidden divider"></div>
+
+							<p>The database's Host is usually "127.0.0.1" or "localhost", if it doesn't work, which is rare, you need to contact you hosting provider.</p>
+
+							<h3 id="inst-admin-access">5. Admin access</h3>
+							<p>The user administrator of your website</p>
+							<p>Note: the avatar is not required during the installation, you can upload one from the website's admin area.</p>
+
+							<div class="ui fluid image">
+								<img src="images/inst-3.png">
+							</div>
+						</div>
+					</div>
+
+					<div class="ui segment">
+						<h2>Settings</h2>
+						<div class="step">
+							<h3 id="sets-general">General</h3>
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									Name : Your website's name
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Title : A headline for your website
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Description : A short description for your website
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Email: Your email address (optional)
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Keywords : Some keywords for your website</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Items per page : The number of products/items to show per page on the client interface (not the administration).
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Environnemnent : The environment's mode (production or development)
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Debug : Whether to show eventual error messages or not.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Blog Title : A title for the blog section.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Enable subscriptions : Enable / Disable Pricing.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Blog Description : A description for the blog section.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Search Panel headers : Headlines to show above the home's main search bar
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+								 	Timezone : The local time to use for your application.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Social Links : Links to your social media accounts/pages (facebook, pinterest, vk, ...).
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Favicon | Logo | Website Cover | Top Cover | Blog Cover | Watermark
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Top Cover : A home-page search panel cover, one for each template.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Watermark : An optional watermark to apply on products covers.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Fonts : Specify custom fonts to use for your website front-office (visitors/buyers side).
+									You can use fonts from google-fonts or from your server.
+									<br><br>
+									<ul class="sub">
+										<li>- From google fonts : Enter the font URL</li>
+										<li>- From your server : Upload fonts (files/folders) to "/publi/assets/fonts/(FONT_FOLDER)/FILE_NAME'</li>
+									</ul>
+
+									<div class="ui hidden divider"></div>
+
+									<div class="example">Example for local fonts :</div>
+									
+									<p class="pre-line">
+										@font-face {
+										    font-family: 'Spartan';
+										    src: url("/assets/fonts/Spartan/Spartan-Regular.ttf");
+										    font-weight: 400;
+										    font-style: normal;
+										}
+										<br>
+										@font-face {
+										    font-family: 'Spartan';
+										    src: url("/assets/fonts/Spartan/Spartan-Medium.ttf");
+										    font-weight: 500;
+										    font-style: normal;
+										}
+									</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Template : Enable default template for your website.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Notification for users : A text message to show on the home page for users to inform them about something.
+								</li>
+							</ul>
+
+							<div class="ui fluid rounded image">
+								<img src="images/sets-general.png">
+							</div>
+
+							<h3 id="sets-mail">Mail</h3>
+							<p>The mailer is required to send and receive email messages, for support, orders ... etc.</p>
+							<div class="step">
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										In your server's cPanel, search/click on "Email Accounts"
+									</li>
+
+									<div class="ui fluid rounded image">
+										<img src="images/inst-10.png">
+									</div>
+
+									<div class="ui hidden divider"></div>
+
+									<li>
+										<i class="circle small outline icon"></i>
+										Then click on "Connect Devices" for your default email account or create a new one
+									</li>
+
+									<div class="ui fluid rounded image">
+										<img src="images/inst-11.png">
+									</div>
+
+									<div class="ui hidden divider"></div>
+
+									<li>
+										<i class="circle small outline icon"></i>
+										Then, at the bottom, you have two choices, secure and none-secure configuration (settings), the password is the one you used to create the new email account or the cPanel one if it's the default email account.
+									</li>
+
+									<div class="ui fluid rounded image">
+										<img src="images/inst-12.png">
+									</div>
+								</ul>
+
+								<div class="ui hidden divider"></div>
+
+								<div class="ui fluid rounded image">
+									<img src="images/sets-mailers.png">
+								</div>
+
+								<div class="ui hidden divider"></div>
+
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Reply to : an email address to which the reply messages are sent when users want to reply to your email messages.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Forward to : an email address to which recevied email messages will be forwarded to.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Queue email messages : Enable/Disable queuing email messages to avoid delayed responses from the server. Email messages will be cached and then sent later with a script runing on a cron job.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You can create a cron job from your server "cPanel" >> "Cron jobs".
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Example of a cron job command : /usr/local/bin/php /absolute_path_to_your_domain_name_folder/artisan queuedMails:send >> /dev/null 2>&1
+									</li>
+								</ul>
+							</div>
+
+							<h3 id="sets-payments">Payments</h3>
+							<div class="step">
+								<h4>PayPal settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a PayPal business account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to PayPal Developer Dashboard <a href="https://developer.paypal.com/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "My Apps & Credentials" click on "Create App"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Give your application a name, select a sandbox account and then click on "Create App"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Once back to the previous page, click on the name of the app you've just created
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										The default mode is "Sandbox" (testing mode), it has its Client ID and Secret ID (Click on "Show" to see it), if you want to use "Live" mode (real payments, no testing) switch to it and you will be shown the IDs for Live mode. 
+									</li>
+
+									<div class="ui fluid rounded image">
+										<img src="images/sets-payments.png">
+									</div>
+								</ul>
+
+								<h4>Change paypal store name</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										login to your real paypal account (or sandbox)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on Cog icon (beside logout button) and select "Account Settings"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										on the left menu, click on "Business information"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For "Business information" click on "Update"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										At the right side of your store's logo, click on "Edit"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Business name", click "Change"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For "Let us know why you're changing your name" select "Your business name has changed"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Enter your new business (store) name and validate the changes (click on "Update business name")
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										That's it. This name is visible for users/buyers on paypal payment page if they want to go back to your website "store" rather than completing the purchase.
+									</li>
+								</ul>
+
+								<h4>FlutterWave settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a FlutterWave account <a href="https://dashboard.flutterwave.com/signup">[Signup]</a> and <a href="https://dashboard.flutterwave.com/login">login</a> to your account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You can get your Public key and Secret key from the left menu "Settings / API"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on the Webhooks tab in the same page 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In the webhook "URL" field enter : https://example.com/checkout/webhook (where example.com is your domain name) 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In the webhook "Secret hash" field enter any random string of characters (like a pasword)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Check the first two checkboxes ["Receive Webhook response in JSON format" and "Enable Webhook retries"]
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy the "Secret hash" to your website / admin / settings / payments / flutterwave config with the public and secret key.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You will need to add a bank account on the "Bank Accounts" tab to be able to process payment via bank transfer and other bank related methods other than cards especially on test mode.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You can switch modes [Live/Test] from flutterwave admin dashboard / left menu. 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Test cards : https://developer.flutterwave.com/docs/test-cards 
+									</li>
+								</ul>
+
+
+								<h4>SslCommerz settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a sandbox SslCommerz account from <a href="https://developer.sslcommerz.com/registration/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You will receive your sanbox login credential via email 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to your sanbox account from <a href="https://sandbox.sslcommerz.com/manage">Here</a> 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You can use the sandbox account credentials to configure SslCommerz in your website, copy the Store id and the Store password to their corresponding field in your website / admin / settings / payments / sslcommerz
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Test cards : https://developer.sslcommerz.com/doc/v4/#payment-process-environment
+									</li>
+								</ul>
+
+
+								<h4>Stripe settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a Stripe account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to your Stripe account dashboard
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, click on "Developers" and then "API Keys"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You will have a "Publishable key" which is the Client ID in your website and a "Secret key" which is the Secret ID in your website. <br> Those two keys or IDs are for testing only (paypal sandbox equivalent mode).
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/paste those IDs in your website Stripe settings fields, enable stripe and save the changes (by clicking on the Update button).
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										<strong>Note :</strong> In order to get Keys/IDs for non-testing mode (Live mode) you wil need to fill in the form <a href="https://dashboard.stripe.com/account/details">Here</a> and submit it to stripe for review.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Test cards can be found <a target="_blank" href="https://stripe.com/docs/testing#cards">Here</a>
+									</li>
+								</ul>
+
+								<h4>Change stripe store name and widget color|logo</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to your stripe account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, click on "settings", then, select "Account information"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Public business information / Public business name" enter your new business (store) name
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You can edit the other fields too, 'support email', 'Statement descriptor', 'Business website' ...
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For wiget color and logo, back to the previous page and select "Branding" (Public business information / Branding)
+									</li>
+								</ul>
+
+								<h4>Razorpay settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a Razorpay account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to your Razorpay account dashboard
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, click on "Settings" and then "API Keys"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy the "Key Id" and "Key Secret" (you may need to click on "Generate Test key" blue button to get the necessary keys).
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/paste those IDs in your website Razorpay settings fields, enable Razorpay and save the changes.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										<strong>Note :</strong> In order to get Keys/IDs for non-testing mode (Live mode) you wil need to fill in the form <a href="https://dashboard.razorpay.com/#/app/activation" target="_blank">Here</a> and submit it to Razorpay for review.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Test cards can be found <a target="_blank" href="https://razorpay.com/docs/payment-gateway/test-card-details/">Here</a>
+									</li>
+								</ul>
+
+								<h4>Skrill settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Skrill payment gateway integration was done via <a target="_blank" href="https://www.skrill.com/fileadmin/content/pdf/Skrill_Quick_Checkout_Guide.pdf">Skrill_Quick_Checkout_Guide.pdf</a> documentation, that is based on their way of working where users/developers are not allowed to access their business control panel for testing purposes (” Test Skrill accounts could be offered only to pre-approved merchants ”), so, you will need to contact them to get a Skrill merchant test account.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Test merchant and test cards are in page 20 of <a target="_blank" href="https://www.skrill.com/fileadmin/content/pdf/Skrill_Quick_Checkout_Guide.pdf">Skrill_Quick_Checkout_Guide.pdf</a> documentation.
+									</li>
+								</ul>
+
+								<h4>Iyzico settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a sandbox Iyzico account <a href="https://sandbox-merchant.iyzipay.com">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to your sandbox Iyzico account dashboard
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, click on "Settings" and then on "Merchant Settings"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on "Show detail" for "API Key" and "Secret Key"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/paste those IDs in your website Iyzico settings fields ("API Key" to "Key ID" and "Secret Key" to "Key Secret"), enable Iyzico and save the changes.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										<strong>Note :</strong> In order to get Keys/IDs for non-testing mode (Live mode) you wil need to create a non-sandbox account <a href="https://www.iyzico.com/en/business/signup/" target="_blank">Here</a>, activate your account via the received email and follow the required steps for applying to a business account.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Test cards can be found <a target="_blank" href="https://dev.iyzipay.com/tr/test-kartlari">Here</a>
+									</li>
+								</ul>
+
+								<h4>CoinGate settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a sanbox CoinGate account <a href="https://sandbox.coingate.com/">Here</a>
+									</li>
+
+									<li>
+										<i class="circle small outline icon"></i>
+										Connect to your Coingate account.
+									</li>
+
+									<li>
+										<i class="circle small outline icon"></i>
+										Create and App and get an Auth token following the instructions <a href="https://support.coingate.com/en/42/how-can-i-create-coingate-api-credentials" target="_blank">Here</a>
+									</li>
+
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste your Auth token in your website >> Administration >> Settings >> Payments >> Coingate >> Auth Token
+									</li>
+
+									<li>
+										<i class="circle small outline icon"></i>
+										Enter the currency (Code of 3 chars, e.g. USD) to which you want to exchange the received currency.
+									</li>
+
+									<li>
+										<i class="circle small outline icon"></i>
+										To get an Auth token for live mode, create a non-sandbox account here <a href="https://coingate.com">Here</a>, and follow the same previous steps. You may be prompted to provide more details about your activity.
+									</li>
+								</ul>
+
+
+								<h4>Midtrans settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a Midtrans account <a href="https://midtrans.com/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Connect to your Midtrans sandbox account <a href="https://dashboard.sandbox.midtrans.com/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu click on "Settings" >> "Configuration".
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For "Finish Redirect URL*" enter https://example.com/checkout/save (where example.com is your domain name. Https ot Http depends on whether you have an ssl certificate or not.)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For "Unfinish Redirect URL*" enter https://example.com/checkout
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For "Error Redirect URL*" enter https://example.com
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Save the changes.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Get your Client Key, Server Key and Merchant ID from "Settings" >> "Access Keys"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste them in your website >> Administration >> Settings >> Payments >> Midtrans
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You can edit your Midtrans payment form preferences form Settings >> Snap Preferences
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										To switch to live mode, select "Production environment" in your Midtrans dashboard, and then follow the registration steps <a href="https://passport.midtrans.com/authenticate" target="_blank">Here</a> 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										<a href="https://docs.midtrans.com/en/technical-reference/sandbox-test" target="_blank">Test payments</a> 
+									</li>
+								</ul>
+
+
+								<h4>Paystack settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a Paystack account <a href="https://paystack.com/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Connect to your Paystack account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, click on "Settings" and then on "API Keys & Webhooks" tab. (no need to enter a 'Callback URL' and a 'Webhook URL')
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste your "Test Secret Key" and "Test Public Key" in your website >> Administration >> Settings >> Payments >> Paystack.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Once done with testing, you can activate your account following the instrcutions in <a href="https://dashboard.paystack.com/#/get-started/activate" target="_blank">this page</a>.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										<a href="https://paystack.com/docs/payments/test-payments/#bank-accounts" target="_blank">Paytack Test payments</a>.
+									</li>
+								</ul>
+
+								<h4>Adyen settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a Adyen account <a href="https://adyen.com/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										<a href="https://ca-live.adyen.com/ca/ca/login.shtml" target="_blank">Connect</a> to your Adyen test account 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										To generate API credentials, follow the instructions in <a href="https://docs.adyen.com/development-resources/api-credentials#generate-your-api-key" target="_blank">this page</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste your "API key", "Client key" and "Merchant account" in your website >> Administration >> Settings >> Payments >> Adyen
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										<a href="https://docs.adyen.com/development-resources/test-cards/test-card-numbers">Test card numbers</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										To activate live mode, connect to your Adyen test account and click on "Apply for live".
+									</li>
+								</ul>
+
+								<h4>Instamojo settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a business Instamojo test account <a href="https://test.instamojo.com/accounts/register/?ref=login" target="_blank">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										<a href="https://test.instamojo.com/accounts/login/" target="_blank">Connect</a> to your Instamojo test account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu click on "API & Plugins"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste your "Private API Key", "Private Auth Token" and "Private Salt" in your website >> Administration >> Settings >> Payments >> Instamojo
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										To switch to live mode, create a business <a href="https://www.instamojo.com/accounts/register" target="_blank">Instamojo non-test account</a> and proceed as before.
+									</li>
+								</ul>
+
+								<h4>Offline payments settings</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Enter your bank account details  
+									</li>
+								</ul>
+
+								<br>
+
+								<div class="example">How it works</div>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										The buyer completes his/her offline purchase
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										His/her purchase is marked as pending
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										He/she transfers the purchase amount to your bank account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You validate the transfer in your bank account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You mark the payment status as paid in your website >> Administration >> Transactions. If the transfer is not done, the buyer won't get access to the purchased items as long as you don't mark the payment or transactions as "Paid". 
+									</li>
+								</ul>
+
+								<h4>Fee</h4>
+								<p>You can set a fee for each payment method independently. (Put 0 if not applicable)</p>
+
+								<h4>VAT (Tax)</h4>
+								<p>You can specify a VAT (Value Added Tax) to apply on your sales. (Put 0 if not applicable)</p>
+
+								<h4>Main currency (Code & Symbol)</h4>
+								<p>A currency code (ISO format) and a symbol if there is any (the "currency code" is mandatory).</p>
+
+								<h4>Allow foreign currencies</h4>
+								<p>Whether to accept receving payments in foreign currencies or not. This implies the use of a Currency exchange API if enabled.</p>
+
+								<h4>Currencies</h4>
+								<p>A selection of currencies in which users can see the prices of your products, and optionally, purchase with if "Allow foreign currencies" is enabled.</p>
+
+								<h4>Currency exchange API</h4>
+								<p>Select an API to use for the exchange rates.</p>
+
+								<p>You can specify an exchange rate manually for each currency based on the main one, in "config/payments.php", in currencies array, change null value for exchange_rate to your custom one and save the changes, this way the exchange rate will be obtained from config/payments.php file and not the API.</p>
+
+								<p>Note : "api.coingate.com", "api.exchangerate.host" and "api.exchangeratesapi.io" are free, while you must get an API key for "api.currencyscoop.com".</p>
+
+								<p>To get an API key for "api.currencyscoop.com", register to one of the pricing plans <a href="https://currencyscoop.com/#pricing" target="_blank">Here</a>, you will find your API KEY in your account page.</p>
+
+								<h4>Allow guest checkout</h4>
+								<p>This allows users to purchase items without beeing connected, after they complete their purchases, they will be given an access token to gain access to the purchased items.</p>
+
+								<p>Allowing guest checkout, makes an option available in the footer of your website (your website's users/visitors/buyers interface), this option is called "Guest section", a page where users can enter a guest access token to get a list of purchased items.</p>
+
+								<div class="ui fluid rounded image">
+									<img src="images/payments.png">
+								</div>
+							</div>
+²
+
+							<h3 id="sets-files-hosts">Files Hosts</h3>
+							<div class="step">
+								<h4>Google Drive</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to Google Console API <a href="https://console.developers.google.com/">Here</a> with your prefered gmail acccount
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on "Select a project" at the top left corner and select or create a new project in the popup window
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										At the top, click on "ENABLE APIS AND SERVICES"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Search for "Google Drive API", select it and then click on "ENABLE" (the blue button)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, click on "Credentials" and select "API Key" in "Create credentials" (the blue dropdown menu)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste the API key in the popup into your "File Hosts Google Drive" settings in your website and close the popup window.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Again, on the left menu, click on "OAuth consent screen", check the "External" radio button and click on "CREATE"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Give a name (required) and a logo (optional) to your application, put your website's domain name in "Authorised domains" field (required), your website's privacy policy page's link into "Application Privacy Policy link" and the same for "Terms of Service" (required).
+										<br>
+										<strong>Note:</strong> the "Privacy policy" and "Terms of Service" page are by default in "http(s)://your_domain_name.tld/page/privacy-policy" and "http(s)://your_domain_name.abc/page/terms-and-conditions"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on "Save"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, click on "Credentials" and then on "Create credentials" and select "OAuth Client ID"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On "Application type" select "Web application"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Authorised redirect URIs" put "http://your_domain.name.tld/login/google/callback" hit Enter to validate and then put another one "http://your_domain.name.tld/gd_callback"
+										<br>
+										<strong>Note:</strong> you can use http or https depending on whether your website under a secure protocol or not, and, with "www." or not.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Authorized JavaScript origins" put "http://your_domain.name.tld" (as said above, with https / http, www. or not or all the possibilities if you want to)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Once finished, click on "Save", you will get a "Client ID" and "Client secret" (the client secret corresponds to the "Secret ID" in your website settings)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste those two IDs in their respective fields in your website / settings / file hosts /google drive (close the popup "OK")
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Save the changes in your website and thereafter click on "Connect" and select the account corresponding to your google drive (you can switch to another one later if you want to) 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Once accepted and agreed to your Google Console APP conditions, you will get a refresh token, enable "Google Drive" in your website if you want and save the changes.
+										<br>
+										<strong>Note:</strong> you will probably get a "This app isn't verified" warning message while trying to connect your account with your app, just click on "Advanced" (a grey underlined text) and click on "Go to ... (unsafe)"
+										<br>
+										Click on "Allow" to give your "Google Console APP" the authorisation to use your google drive (see, edit, create and delete files in your google drive) and again click on "Allow"
+									</li>
+								</ul>
+
+								<h4>Dropbox</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to your Dropbox developers <a href="https://www.dropbox.com/developers/apps/">Here</a> with your prefered email
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Once in, click on "Create app"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Select "Dropbox API"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Select whether you want to get files only from the app folder all dropbox.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Give a name to your application, it's going to be your App folder's name, so, if you've choosen "App Folder" above, your requests to dropbox will be limited to this folder, else, to your whole dropbox.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on "Create app"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Once done, your App Key and APP Secret will be on the given page, copy/pase them into their respective fields in your website / settings / file hosts / dropbox, and save the changes (Update)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For the "Redirect URIs", put "https://your_domain_name.tld/admin/settings/files_host" and click on "Add" (https is required)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										If you want this app this be uesd by different accounts, click on "Enable additional user" at the top of the page, by that, your app will be allowed to be used by 500 users (accounts) as max.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Back to you website /settings / file hosts / dropbox, click on "Connect", connect with the dropbox accont you want to use, click on "Continue" and then "Allow", you will be redirected to your website with an "access token" place in its place for dropbox. 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Enable Dropbox if you want, save the change and that's it.
+									</li>
+								</ul>
+
+								<p><strong>Note :</strong> The enabled "file hosts" will be visible in "Create" and "Edit" product's page.</p>
+								<p><strong>Note :</strong> The email shown in a green message for each "File Host" corresponds to the email you connected with to each "File Host" (the account in use).</p>
+
+								<h4>Working with Folders or Files</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										You can only work with one of the two option, files or folders
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										To replace files with folders or the opposite for your existing products/items, select the right option and edit your product with the new file/folder. Buyers of that item will automatically have access to that file/folder.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										You can set a default path for the folder that you want to access by default in your google drive or dropbox account, so that when you open google drive or dropbox modal to select a file/folder, only files/folder in that path will be shown.
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										The default path for your google drive corresponds to a Folder ID that you can get from the address bar ("https://.../folders/1_w2z8qVsGFDl9yv4qYf55fLKQTh9lpLN" where "1_w2z8qVsGFDl9yv4qYf55fLKQTh9lpLN" is the folder id)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										The default path for your dropbox corresponds to a Folder Path that you can get from the address bar ("https://www.dropbox.com/home/Valexa" where "/Valexa" is the folder path)
+									</li>
+								</ul>
+
+								<p><strong>Note :</strong> You don't need to and you should not make your folders and files accessible publicly or sharing them, they are served to buyers privately under your autorization via the API.</p>
+							</div>
+							
+							<h3 id="sets-social-login">Social Login</h3>
+							<div class="step">
+								<h4>Google</h4>
+								<p>In this step, you can either use the credentials you got from "Files Hosts" step (Client ID and Secret ID for google drive) or create other Credentials with another gmail account followwing the same steps mentionned in "Files Hosts" for google drive but without enabling "Google Drive API", because it's not necessary, just Credentials for "OAuth Client ID" and the "OAuth Consent Screen".</p>
+
+								<h4>Github</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a github account (if you don't have one)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to your github account
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										on the profile dropdown menu, select "Settings"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, select "Developers settings" (the last option in the menu)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, click on "OAuth Apps" and then "New OAuth APp"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Enter a name for yout application and a description
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For "Homepage URL" enter your website's url (https://your_domain_name.tld)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For "Authorization callback URL" enter "https://your_domain_name.tld/login/github/callback", once finished, click on "Register application"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on the application you've just created, you'll see your Client ID and Secret ID, (you can upload a logo for your github application if you want to) 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/paste the Client ID and Secret ID to their respective fields in your website (settings / social login / github)
+									</li>
+								</ul>
+
+								<h4>Twitter</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a twitter account (if you don't have one)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to Twitter Developper website <a href="https://developer.twitter.com/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the dropdown menu (the one with your name), select "Apps" and then click on "Create an app"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Enter a name, a description for your application, your website's url (https://your_domain_name.tld), check the "Enable Sign in with Twitter" checkbox
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Callback URLs", enter "https://your_domain_name.tld/login/twitter/callback"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Terms of Service URL", enter "https://your_domain_name.tld/page/terms-and-conditions"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Tell us how this app will be used", tell them you want to allow users to login to website with their twitter accounts and for that you will need their usernames, emails and optionally their avatars (no tweets, no contacts, not anything else).
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on "Create" to complete the process <br>
+										You will need to wait for sometime for Twitter dev Team to review your request. 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Once your request is validated, login to twitter developers / Apps / Your application (the place your were in before) 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on "Keys and tokens"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Consumer API keys", the (API key) corresponds to your twitter Client ID and (API secret key) to your twitter Secret ID
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste those two IDs to their places in your website / settings / social login / twitter
+									</li>
+								</ul>
+
+								<h4>Linkedin</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a Linkedin account (if you don't have one)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to Linkedin developpers <a href="https://www.linkedin.com/developers/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On "My Apps" dropdown menu, select "Create app"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Enter a name for your app, a company name
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Privacy policy" put "http(s)://your_domain_name.tld/page/privacy-policy"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Upload a logo for your linkedin app
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										For "Products" leave everything as is
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Accept the "Legal terms" and hit "Create" button
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Once done, from the previous dropdown menu (My Apps), select the App you've just created
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Select "Auth" on the top menu, scroll down to "Redirect URLs:" and put in "http(s)://your_domain_name.tld/login/linkedin/callback" 
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										At the top of the same page, you have your Client ID and Secret ID shown as 'Client Secret' for your Linkedin app
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste those to IDs to their respective fields in your website / settings / social login / Linkedin
+									</li>
+								</ul>
+
+								<h4>Facebook</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a Facebook account (if you don't have one)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to Facebook Developers <a href="https://developers.facebook.com/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										From "My Apps" dropdown menu, select "Create App"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Give a name to your App and a contact email and then click on "Create App ID"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Add a Product" click on "Set up" for "Facebook Login" product
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In the left menu, under "Facebook Login" click on "Settings"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Valid OAuth Redirect URIs" put "https://your_domain_name.tld/login/facebook/callback"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In the left menu, click on "Settings" and then "Basic"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "App Domains" enter your domain name with and without www. (withour http)
+										<br>
+										e.g. your_domain_name.tld and www.your_domain_name.tld
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Privacy Policy URL" put http(s)://your_domain_name.tld/page/privacy-policy
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Terms of Service URL" put http(s)://your_domain_name.tld/page/terms-and-conditions
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Category" select which category your website's activity belongs to
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										The Client ID and Secret ID are at the top of the page (Settings / Basic), copy/paste them to their places in your website / settings / social login / facebook
+									</li>
+								</ul>
+
+								<h4>VKontacte</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Create a VK account (if you don't have one)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Login to VK Dev <a href="https://vk.com/dev">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										At the top menu, click on "My Apps"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on "Create app"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Give your app a title
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On "Platform" select "Website"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Website address" and "Base domain" entre respectively "http(s)://your_domain_name.tld", "your_domain_name.tld"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Thereafter, click on "Connect website"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Terms and Conditions" write "http(s)://your_domain_name.tld/page/terms-and-conditions"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Privacy Policy" write "http(s)://your_domain_name.tld/page/privacy-policy"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Screenshots" Upload an image for your application if you want to
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										On the left menu, click on "Settings"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Scroll down to "Authorized redirect URI" end enter "http(s)://your_domain_name.tld/login/vkontakte/callback"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Website focus" select your website activity
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										The "App ID" at the top serves as "Client ID" and "Secure key" as "Secret ID" for your VKontacte login settings
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										That's it, don't forget to enable it and save the changes. 
+									</li>
+								</ul>
+							</div>
+
+							<h3 id="sets-search-engines">Search Engines</h3>
+							<div class="step">
+								<h4>Google Site verification</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Connect to Google Webmaster <a href="https://www.google.com/webmasters/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Domain", enter your domain name "your_domain_name.tld" (without http) and click on "Continue"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In the windows that shows up, copy the "google-site-verification" value, just the code after "=" sign
+										<br>
+										e.g. google-site-verification=THE_CODE_HERE
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Paste it in your website / settings / search engines / Site verification / Google and save the changes (update)
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Back to google webmaster page, click on "Verify" to complete the verification
+									</li>
+								</ul>
+
+								<h4>Bing Site verification</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Connect to Bing Webmaster <a href="https://www.bing.com/toolbox/webmaster/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Add a Site" under My Sites", enter your website's url "http(s)://your_domain_name.tld" and click on "Add"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Next, copy the content value in '&lt;meta name="msvalidate.01" content="THIS_ONE" /&gt;'
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Paste it in your website / settings / search engines / Site verification / Bing
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Back to Bing webmaster, click on "Verify" (the one under "Copy and paste a &lt;meta&gt; tag in your default webpage") to complete the verification
+									</li>
+								</ul>
+
+								<h4>Yandex Site verification</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										Connect to Yandex Webmaster <a href="https://webmaster.yandex.com/welcome/">Here</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on your profile and then "Settings"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										At the top menu, click on the "+" sign beside "Select site"
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Click on "Confirm" or close the popup that shows up
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										In "Site address", enter your website url "http(s)://your_domain_name.tld" and hit "Add" button
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Once done, select the content's value '&lt;meta name="yandex-verification" content="THIS_ONE" /&gt;'
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										Copy/Paste this value in your website / settings / search engines / Site verification / Yandex
+									</li>
+								</ul>
+
+								<h4>Google analytics</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										<a href="https://support.google.com/analytics/answer/1009694?hl=en">
+											https://support.google.com/analytics/answer/1009694?hl=en
+										</a>
+									</li>
+									<li>
+										<i class="circle small outline icon"></i>
+										<a href="https://support.google.com/analytics/answer/1042508?hl=en">
+											https://support.google.com/analytics/answer/1042508?hl=en
+										</a>
+									</li>
+								</ul>
+								
+								<h4>Robots</h4>
+								<ul>
+									<li>
+										<i class="circle small outline icon"></i>
+										<a href="https://developers.google.com/search/reference/robots_meta_tag#valid-indexing--serving-directives">
+											https://developers.google.com/search/reference/robots_meta_tag#valid-indexing--serving-directives
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="ui segment">
+						<h2 id="categories">Categories</h2>
+						<div class="step">
+							<p>Categories can be created for both blog posts and items/products</p>
+						</div>
+					</div>
+
+					<div class="ui segment">
+						<h2 id="products">Products</h2>
+						<div class="step">
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Price</strong>
+									<p>The price can be >= 0. 0 means the product is offered for free.</p>
+									<p>You can specify a free download time when the price is greater than 0.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Promotional price</strong>
+									<p>A price lesser than the normal one.</p>
+									<p>You can specify an expiration time for the promotional price.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Quantity in stock</strong>
+									<p>To work with stock, put a quantity in this field. 0 means out of stock.</p>
+									<p>Leave empty if not applicable.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Enable license</strong>
+									<p>This generate a license key for buyers for every purchased item.</p>
+									<p>You can verify then is a license key is valid.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>File</strong>
+									<p>The main file can be uploaded from your device or just selected from the files that you have in your Google Drive or Dropbox, but, for those two last options, you need to configure and enable them in "Settings / Files Hosts" first</p>
+									<p>Note: the main file must be an archive, a .zip, .7z or .rar file.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Folder</strong>
+									<p>The main folder can be uploaded from your device or just selected from the folder that you have in your Google Drive or Dropbox, but, for those two last options, you need to configure and enable them in "Settings / Files Hosts" first</p>
+									<p>Note: the main folder must not contain any subfolders.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Thumbnail (Optional)</strong>
+									<p>The thumbnail is the item's icon, it will be visible beside the name of the item in the main page of the said item.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Screenshots (Optional)</strong>
+									<p>A zip file containing all screenshots. They must be directly accessible not in subfolders.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Cover (Required)</strong>
+									<p>The main image of the item.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Video preview (Optional)</strong>
+									<p>A video preview to show in the place of the cover. The cover will serve as a video thumbnail in this case.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Hidden content</strong>
+									<p>A content available for premium users only (users with a valid subscription or that have purchased the item).</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Trending status</strong>
+									<p>The trending status is based on two elements, the number of sales and the number of views.</p>
+									<p>You have the choice to activate this status manually for the items that you want in the items/products list.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Active status</strong>
+									<p>This status make an item published or not (visible or hidden for users).</p>
+								</li>
+							</ul>
+
+							<div class="example">Notes</div>
+							<p>Free items get added to the purchased items of the user if he/she decides to download them.</p>
+						</div>
+					</div>
+
+
+					<div class="ui segment">
+						<h2 id="pages">Pages</h2>
+						<div class="step">
+							<p>Each page has a name, a short description for search engine, a main content and some tags</p>
+							<p>Pages are shown in the footer of the website.</p>
+						</div>
+					</div>
+
+
+					<div class="ui segment">
+						<h2 id="posts">Posts</h2>
+						<div class="step">
+							<p>Each post has a name, short description for search engines, a cover, a category, a main content and some tags</p>
+							<p>You can add a new category if it's not already in the categories list, it will be created and added to your categories during the post's creation.</p>
+							<p>Note: make sure your posts's covers have the same dimension so the user interface doesn't look ugly.</p>
+						</div>
+					</div>
+
+
+					<div class="ui segment">
+						<h2 id="Coupons">Coupons</h2>
+						<div class="step">
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Value</strong>
+									<p>The value can be either monatary or percentage by setting the "Is percentage" option to Yes ot No.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Products (required if "Subscriptions" if empty)</strong>
+									<p>The products to which you want to authorize the coupon.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Subscriptions (required if "Subscriptions" if empty)</strong>
+									<p>The subscriptions plans to which you want to authorize the coupon.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Users</strong>
+									<p>Users who can use the coupon. If left empty, all users can use the coupon.</p>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Allow one time use per user</strong>
+									<p>If enabled (Yes), the coupon can be used only one time by the same user.</p>
+								</li>
+							</ul>
+
+							<div class="example">Notes</div>
+							<p>100% Off coupon zerofies/nullifies the item's price to 0, once this concerned item is purchased, it's added to the purchased items of the user/buyer.</p>
+						</div>
+					</div>
+
+
+					<div class="ui segment">
+						<h2 id="Transactions">Transactions</h2>
+						<div class="step">
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									Transactions can be marked as refunded, the refund is done then from your payment service account (PayPal, Stripe, ...).
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									If a transaction is marked as refunded or not-paid, the buyer will lose access to the items of the transaction..
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									The details about any transaction can be seen from "Actions / Details" in the transactions list.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									A "N-A" payment processor is used when a transaction contains only free items, user/buyer doesn't have to go through the normal payment process to complete a free-purchase.
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+
+					<div class="ui segment">
+						<h2 id="Comments">Comments</h2>
+						<div class="step">
+							<p>By default and as unique option, all comments and reviews need to be approved to be published and then visible to users/visitors.</p>
+						</div>
+					</div>
+
+					<div class="ui segment">
+						<h2 id="Users">Users</h2>
+						<div class="step">
+							<p>The users list show if a user has verified his/her email address or not yet, how much he spent in your platform, how many items he purchased in your platform, when did he/she register to you platform and his/her email address.</p>
+							<p>You can delete users but cannot add users.</p>
+							<p>You can block users.</p>
+							<p>You can verify users email addresses manually.</p>
+						</div>
+					</div>
+
+					<div class="ui segment">
+						<h2 id="Reviews">Reviews</h2>
+						<div class="step">
+							<p>As said previously, reviews need your approval to get published in your website.</p>
+						</div>
+					</div>
+
+					<div class="ui segment">
+						<h2>Newsletter</h2>
+						<div class="step">
+							<h3 id="Subscribers">Subscribers</h3>
+							<p>List of subscribers to your newsletter</p>
+							<p>This list can be exported in csv format in case you want to use it in other third party newsletter services</p>
+
+							<h3 id="Create-newsletter">Create newsletter</h3>
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									You can select specific emails (subscribers) to which you want to send the newsletter, or, leave the emails field empty to send it to all subscribers.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									The subject field is mandatory
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									For the newsletter's body, you can either use the html editor and write you own newsletter, or, use the selections to prepare your newsletter.
+									<br>
+									The search product field (dropdown list) is based on a search that returns 5 results so you don't load 1k items or more at once.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									You can preview the newsletter before you send it.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					
+					<div class="ui segment">
+						<h2 id="FAQs">FAQs</h2>
+						<div class="step">
+							<p>FAQs are shown in Support page.</p>
+						</div>
+					</div>
+
+
+					<div class="ui segment">
+						<h2 id="Support-Messages">Support Messages</h2>
+						<div class="step">
+							<p>Messages sent by users/visitors through the support form (in Support page).</p>
+							<p>You can reply to them via "Actions / Reply"</p>
+						  <p>If you did specify a "reply to" email address in "Settings / Mailer / Mail" then if the user/visitor decide to response back to your message, his/her message will be sent to this email address which may be different than the one you contacted him with.</p>
+						</div>
+					</div>
+
+					<div class="ui segment">
+						<h2 id="Support-Messages">Validate licenses (Form & REST API)</h2>
+						<div class="step">
+							<p>You can validate license keys via the form in your website >> "Administration" >> "Validate licenses", on the left menu, you only need to enter the license key you want to validate and submit it.</p>
+							<p>You can also validate license keys via a REST API which requires an bearer token and a license key to validate. Example showing how to do that and your bearer token can be found in the same page mentioned previously (your website >> "Administration" >> "Validate licenses")</p>
+						</div>
+
+						<div class="ui hidden divider"></div>
+
+						<div class="ui fluid rounded image">
+							<img src="images/validate-license.png">
+						</div>
+					</div>
+
+					<div class="ui segment">
+						<h2 id="Profile">Profile</h2>
+						<div class="step">
+							<p>Here you can update your profile.</p>
+							<p>If you don't want to update the password, leave it empty, else, type your new password in.</p>
+							<p>The profile picture can be loaded by clicking on the existing profile picture, it serves as a picture and a browse file button.</p>
+						</div>
+					</div>
+
+					<div class="ui segment">
+						<h2 id="Sitemap">Sitemap</h2>
+						<div class="step">
+							<p>Sitemaps are generated, created and updated automatically from the admin area and put in your website root under the following names (posts.xml, products.xml and pages.xml).</p>
+							<p>You can access them via "http(s)://your_domain_name.tld/{sitemap_name}" where {sitemap_name} is one of the three names mentioned above.</p>
+							<p>In case a file get corrupted just delete it from your website's root and get to the administration in your website and then to the items list of the concerned sitemap file (posts, products, pages), it will be recreated automatically.</p>
+						</div>
+					</div>
+
+					<div class="ui segment">
+						<h2 id="Languages">Add a language</h2>
+						<div class="step">
+							<p>To add a new language :</p>
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									Download Laravel Languages Package from Github or the following link <a href="https://github.com/Laravel-Lang/lang/archive/master.zip" target="_blank">https://github.com/Laravel-Lang/lang/archive/master.zip</a>
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Extract the zip file
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Copy your language folder from "/lang-master/src" to "YOUR_WEBSITE_DOCUMENT_ROOT/resources/lang/"
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Copy your language json file from "/lang-master/json" to "YOUR_WEBSITE_DOCUMENT_ROOT/resources/lang/"
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									In "YOUR_WEBSITE_DOCUMENT_ROOT/resources/lang/" create a new json file with the name of your language (take example of the existing ones : e.g en.json, fr.json, ...)
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Copy the content of fr.json or es.json file to your file.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Translate the phrases/words on the left to your language and put the translated version on the right side (Key: Value). Keys are all the same for all files (English is the base language) and Values are the translation.
+								</li>
+
+								<div class="ui fluid rounded image">
+									<img src="images/translation.png">
+								</div>
+							</ul>
+
+							<div class="example">Note</div>
+							<p>Words preceeded/attached with a colon (:) are parameters, they must remain inchanged, don't translate them.</p>
+							<p>E.g : "The :attribute must be a valid role."</p>
+							<p>Translation to french : "Le :attribute doit être un rôle valid."</p>
+							<br><br>
+							<p>If your language is not in the downloaded folder (doesn't exist) :</p>
+
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									Create a folder with your language code (en, fr, ...)
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									From your "YOUR_WEBSITE_DOCUMENT_ROOT/resources/lang/", copy the content of fr or es folder to your own folder 
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Translate the 5 files like we explained above
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Move your folder to "YOUR_WEBSITE_DOCUMENT_ROOT/resources/lang/"
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Create a json file like the existing ones (fr.json, en.json, ...)
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Copy the content of es.json or fr.json to your json file
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Translate the keys as explained above
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Enable your language from your website Administration >> Settings >> General >> Languages
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									If everything is done correctly, you should see your website with your language.s
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="ui segment">
+						<h2 id="Assets">Assets</h2>
+						<div class="step">
+							<h3>CSS Files</h3>
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Administration</strong><br>public/assets/admin/app-ltr.css | app-rtl.css
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Non-Administration Tendra template</strong><br>public/assets/front/tendra-ltr.css | tendra-rtl.css
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Non-Administration Valexa template</strong><br>public/assets/front/valexa-ltr.css | valexa-rtl.css
+								</li>
+							</ul>
+
+							<div class="example">Note</div>
+							<p>CSS files result from compiled scss files that can be found at "/resources/sass" folder.</p>
+							<p>You can read more about Laravel mix <a href="https://laravel.com/docs/8.x/mix" target="_blank">Here</a></p>
+
+							<h3>Javascript Files</h3>
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Administration</strong><br>public/assets/admin/app.js
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Non-Administration Tendra template</strong><br>public/assets/front/tendra.js
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									<strong>Non-Administration Valexa template</strong><br>public/assets/front/valexa.js
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="ui segment" id="upgrade">
+						<h2>2.0.1 Upgrade</h2>
+
+						<div class="step">
+							<ul>
+								<li>
+									<i class="circle small outline icon"></i>
+									Before you try to upgrade your website, i highly recommend you to create a backup for your website, both script and database, and, i highly recommend you to apply the upgrade in a copy of your script+database to avoid any problem, if the upgrade is done correctly then execute it on your original script+database.
+									<br><br>
+									If your website is at an insignificant stage (you have not started yet), you can omit the recommendation above and execute the upgrade directly or remove your old script + drop your database tables and launch a new installation with the new version.
+								</li>
+								<div class="ui hidden divider"></div>
+								<li><strong>Installation steps :</strong></li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Move "upgrade" folder from the extracted zip file to your website document root ("/public" folder)
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Move "Script" folder from the extracted zip file to "/upgrade/releases/2.0.1/" (where you have an empty file named 'PLACE_THE_SCRIPT_FOLDER_HERE')
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Access the upgrade folder via the address bar (e.g. https://example.com/upgrade)
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									The old versions should be disabled and the new one have a Yellow button to execute the upgrade.
+								</li>
+
+								<div class="ui fluid rounded image">
+									<img src="images/upgrade.png">
+								</div>
+
+								<li>
+									<i class="circle small outline icon"></i>
+									Click on "Execute" to install the new update.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Once the upgrade is done, you will be redirected back to the available upgrades page, but, this time the latest one will be disabled also.
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Click on "Home" in the top menu to go back to your website home page. 
+								</li>
+								<li>
+									<i class="circle small outline icon"></i>
+									Remove the "upgrade" folder from your Document root ("/public" folder).
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		$(function()
+		{
+			$('i.image.outline').popup({
+				on: 'click',
+		  })
+		})
+	</script>
+
+
+</body>
+</html>
